@@ -1,0 +1,50 @@
+*{
+
+}
+.addclass{
+  background-color: yellow;
+}
+.red-text{
+  color: red;
+}
+.toggle{
+  background-color: pink;
+}
+.Append{
+  background-color: #44dced;
+}
+.click{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.magic{
+  text-align: center;
+  background-color: #bc67ea;
+}
+.slides{
+  background-color: #41db91;
+  text-align: center;
+}
+.fade{
+  text-align: center;
+}
+.before p{
+  text-align: center;
+  color: red;
+}
+.after p{
+  text-align: center;
+  color: blue;
+}
+.html{
+  background-color: pink;
+  text-align: center;
+}
+.img{
+  text-align: center;
+}
+.val{
+  background-color: gray;
+  text-align: center;
+}

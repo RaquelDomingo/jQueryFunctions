@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#turnred").click(function(){
+          $(".addclass p:first").addClass("red-text");
+        });
+        $("#slide").click(function(){
+          $(".toggle h1").slideToggle("SlideUp");
+        });
+        $("#Addme").click(function(){
+          $(".Append h1").append("<b>Hello</b>");
+        });
+        $(".click").click(function(){
+          alert("POP POP POP POP");
+        });
+        $("#hide").click(function(){
+          $(".magic h1").hide("h1");
+        });
+        $("#show").click(function(){
+          $(".magic h1").show("h1");
+        });
+        $("#slideup").click(function(){
+          $(".slides h1").slideUp("slideup");
+        });
+        $("#slidedown").click(function(){
+          $(".slides h1").slideDown("slidedown");
+        });
+        $(".fade h1").hover(function(){
+          $(".fade h1").fadeOut(".fade h1");
+          $(".fade h1").fadeIn("slow");
+        });
+        $(".before").hover(function(){
+          $(".before p" ).before( "Don't <b>Leave Me!</b>");
+        });
+        $(".after").hover(function(){
+          $(".after p" ).after( "<b>GO AWAY!</b>");
+        });
+        $(".html").click(function(){
+          $(".html p").html("<b>I'm fine, Thank you!<b>");
+        });
+        $("#blue").click(function(){
+          $("img").attr("width", "500");
+        });
+        $("#red").click(function(){
+          $("input:text").val("Raquel Domingo");
+        });
+        $("#btn1").click(function(){
+          $("div").data("greeting", "Hello World");
+        });
+        $("#btn2").click(function(){
+          alert($("div").data("greeting"));
+        });
+    });
+    </script>
+
+  </head>
+  <body>
+    <div class="addclass">
+      <h1>Welcome</h1>
+      <input id="turnred" type="submit" value="AddClass">
+      <p>Please write your name</p>
+    </div>
+
+    <div class="val">
+      <p>Name: <input type="text" name="user"></p>
+      <button id="red">Submit</button>
+    </div>
+
+    <div>
+      <button id="btn1">Attach data to div element</button><br>
+      <button id="btn2">Get data attached to div element</button>
+    </div>
+
+    <div class="toggle">
+      <h1>Oh Hello!</h1>
+      <input id="slide" type="submit" value="Slidetoggle">
+      <p>Click the button to hide "Oh Hello!"</p>
+    </div>
+
+    <div class="Append">
+      <h1>Hello</h1>
+      <input id="Addme" type="submit" value="Click Me">
+    </div>
+
+    <div class="click">
+      <h1>POP ALERT!</h1>
+    </div>
+
+    <div class="magic">
+      <h1>Magic Trick</h1>
+      <input id="hide" type="submit" value="HIDE">
+      <input id="show" type="submit" value="SHOW">
+    </div>
+
+    <div>
+    <img src="github.png" alt="Pulpit Rock" width="284" height="213"><br>
+    <button id="blue">Set the width attribute of the image</button>
+    </div>
+
+    <div class="slides">
+      <h1>I CAN SLIDE</h1>
+      <button id="slideup">SLIDE UP</button>
+      <button id="slidedown">SLIDE DOWN</button>
+    </div>
+
+    <div class="html">
+      <button>Hey you!</button>
+      <p>Hello</p>
+      <p>How are you?</p>
+    </div>
+
+    <div class="fade">
+      <h1>Watch me disappear :P</h1>
+    </div>
+
+    <div class="before">
+      <p>Don't Leave Me!</p>
+    </div>
+
+    <div class="after">
+      <p>GO AWAY!</p>
+    </div>
+
+  </body>
+</html>
